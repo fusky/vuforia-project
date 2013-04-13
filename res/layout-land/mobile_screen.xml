@@ -10,6 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="top"
+        android:scaleType="fitXY"
         android:src="@drawable/badge_background" />
 
     <RelativeLayout
@@ -23,29 +24,26 @@
             android:layout_alignParentBottom="true"
             android:layout_alignParentLeft="true"
             android:adjustViewBounds="true"
+            android:scaleType="fitXY"
             android:src="@drawable/mobile_harvest" />
 
-        <EditText
-            android:id="@+id/txt_mob"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="144dp"
-            android:ems="10"
-            android:inputType="numberPassword" >
-
-            <requestFocus />
-        </EditText>
-
         <Button
-            android:id="@+id/lgn_btn"
+            android:id="@+id/mob_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignBottom="@+id/txt_mob"
             android:layout_marginLeft="18dp"
             android:layout_toRightOf="@+id/txt_mob"
             android:text="Login" />
+
+        <EditText
+            android:id="@+id/txt_mob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/imageView2"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="47dp"
+            android:ems="10"/>
 
     </RelativeLayout>
 
